@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// Test suite for web elements methods
+// methods
 describe('webelements method', function () {
 
     // Test case for click() method
@@ -63,13 +63,13 @@ describe('webelements method', function () {
         })
     })
 
-    // Test case for getting text and verifying the text of element
+    // Test case for getting text and and and and verify the text of element
     it('getting text and verifying the text of element', function () {
         // Visit the specified URL
         cy.visit('https://www.webdriveruniversity.com/Contact-Us/contactus.html')
         // Assert the text content of an h2 element
         cy.get('h2').should('have.text', 'CONTACT US')
-        // Log the text content
+        // Log the text 
         cy.get('h2').invoke('text').then(function (txt) {
             cy.log(txt)
         })
@@ -77,19 +77,19 @@ describe('webelements method', function () {
         cy.get('h2').should('be.visible')
     })
 
-    // Test case for checking if an element is selected
-    it('element is selected', function () {
+    // Test case to check element is select ahe or nhi
+      it('element is selected', function () {
         // Visit the specified URL
         cy.visit('https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
-        // Assert that a checkbox with value "pumpkin" is checked
-        cy.get('[value="pumpkin"]').should('be.checked')
+        // Assert checkbox with value "Lettuce" is checked
+        cy.get('[value="Lettuce"]').should('be.checked')
     })
 
-    // Test case for checking if an element is enabled
+    // element is enabled
     it('element is enabled', function () {
-        // Visit the specified URL
+        
         cy.visit('https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html')
-        // Assert that a checkbox with value "cabbage" is disabled
+        //asert "cabbage" is disabled
         cy.get('[value="cabbage"]').should('be.disabled')
     })
 
