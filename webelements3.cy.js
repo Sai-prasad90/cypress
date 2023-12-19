@@ -25,7 +25,7 @@ describe('Locating elements', function () {
         // Locating elements with the class 'text-center' and verifying the count is 2.
         cy.get('.text-center').should('have.length', 2)
     })
-
+    
     it('find element by css Selector', function () {
         // input[attribute="value"]
         cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html')
